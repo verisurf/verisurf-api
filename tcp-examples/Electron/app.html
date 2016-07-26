@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Verisurf API Sample - Electron</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="app.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <!-- Navigation Bar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                Commands
+            </li>
+            <li>
+                <a href="#" onclick="Connect();">Connect</a>
+            </li>
+            <li>
+                <a href="#" onclick="CommandList();">Command List</a>
+            </li>
+            <li>
+                <a href="#" onclick="FileOpen();">File Open</a>
+            </li>
+            <li>
+                <a href="#" onclick="PlanList();">Plan List</a>
+            </li>
+            <li>
+                <a href="#" onclick="PlanLoad();">Plan Load</a>
+            </li>
+            <li>
+                <a href="#" onclick="PlanInfo();">Plan Info</a>
+            </li>
+            <li>
+                <a href="#" onclick="ObjectMeasure();">Object Measure</a>
+            </li>
+            <li>
+                <a href="#" onclick="ObjectInfo();">Object Info</a>
+            </li>
+            <li>
+                <a href="#" onclick="FileSave();">File Save</a>
+            </li>
+            <li>
+                <a href="#" onclick="Disconnect();">Disconnect</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Verisurf API Sample</h1>
+                    <p>This is a sample application for the Verisurf API written in Electron. The navigation items on
+                        the left will issue commands to Verisurf and the area below will show the response from
+                        Verisurf. You may also issue arbitrary commands from the text box below.</p>
+                    <textarea id="results" name="results" id="" style="resize: none; width:100%; height:200px;" disabled></textarea>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12 flexed">
+                    <input type="text" id="command" class="form-control" placeholder="Command" />
+                    <button class="btn btn-primary" onclick="CustomCommand();">Send Command</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window['old_module'] = window['module'];
+    delete window.module;
+</script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script>
+    window['module'] = window['old_module'];
+    delete window.old_module;
+</script>
+<script src="app.js"></script>
+</html>
