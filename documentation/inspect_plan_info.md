@@ -1,15 +1,15 @@
 # Command
 
-    <Command_List />
+    <Inspect_Plan_Info id="" />
 
 ## Description
 
-Returns all currently supported commands accepted by the API
+Returns object information for plan with specific id
 
 ***
 
 ## Parameters
-- **None**
+- **id** _(required)_ — object id to be retrieved
 
 ***
 
@@ -18,9 +18,8 @@ A XML response with the following format:
 
 - **response** — default wrapper for all API responses
     - 'command_received' — echos command sent to API
-    - 'commands' — contains elements describing all possible API commands
 
 ***
 
 ## Errors
-- **None**
+- **406** — Missing parameter "id" in request

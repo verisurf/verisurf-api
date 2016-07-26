@@ -1,6 +1,6 @@
 # Command
 
-    <Command_List />
+    <Inspect_Plan_Load id="" />
 
 ## Description
 
@@ -18,7 +18,6 @@ A XML response with the following format:
 
 - **response** — default wrapper for all API responses
     - 'command_received' — echos command sent to API
-    - 'commands' — contains elements describing all possible API commands
 
 ***
 

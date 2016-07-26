@@ -1,15 +1,15 @@
 # Command
 
-    <Command_List />
+    <Inspect_Object_Info id="" />
 
 ## Description
 
-Returns all currently supported commands accepted by the API
+Returns measurement information for object with specific id
 
 ***
 
 ## Parameters
-- **None**
+- **id** _(required)_ — object id to be retrieved
 
 ***
 
@@ -18,9 +18,11 @@ A XML response with the following format:
 
 - **response** — default wrapper for all API responses
     - 'command_received' — echos command sent to API
-    - 'commands' — contains elements describing all possible API commands
 
+- **data** — default wrapper for all secondary data API responses
+    - 'inspect_planobjectinfo' — container for object information
+	
 ***
 
 ## Errors
-- **None**
+- **406** — Missing parameter "id" in request

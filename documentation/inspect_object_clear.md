@@ -1,10 +1,10 @@
 # Command
 
-    <Command_List />
+    <Inspect_Object_Clear />
 
 ## Description
 
-Returns all currently supported commands accepted by the API
+Removes all measurement information from the currently selected plan object
 
 ***
 
@@ -18,7 +18,6 @@ A XML response with the following format:
 
 - **response** — default wrapper for all API responses
     - 'command_received' — echos command sent to API
-    - 'commands' — contains elements describing all possible API commands
 
 ***
 

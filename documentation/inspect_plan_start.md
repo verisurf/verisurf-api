@@ -1,10 +1,10 @@
 # Command
 
-    <Command_List />
+    <Inspect_Plan_Start />
 
 ## Description
 
-Returns all currently supported commands accepted by the API
+Starts plan inspections process
 
 ***
 
@@ -18,7 +18,6 @@ A XML response with the following format:
 
 - **response** — default wrapper for all API responses
     - 'command_received' — echos command sent to API
-    - 'commands' — contains elements describing all possible API commands
 
 ***
 
