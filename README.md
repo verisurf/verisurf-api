@@ -89,6 +89,11 @@ The following rule applies to all TCP API requests
 - **[<code>Device</code> Device_Info](https://github.com/verisurf/verisurf-api/blob/master/documentation/device_info.md)**
 
 ## <a name="error">Error Codes</a>
+| Code | Issue | Cause |
+|------|-------|------------|
+| 400 | Bad Request | Request not in XML format |
+| 404 | Command Unknown | Command not in Command List |
+| 406 | Missing Parameter | Required parameter missing from request |
 
 ## <a name="examples">Examples</a>
 ###TCP Examples
@@ -100,7 +105,7 @@ The following rule applies to all TCP API requests
 
 ###WEB Examples
 * [<code>Javascript</code> Live-Report](https://github.com/verisurf/verisurf-api/tree/master/web-examples/Live-Report)
-* [<code>Javascript</code> Probes (Phaser)](https://github.com/verisurf/verisurf-api/tree/master/web-examples/Probes)
+* [<code>Javascript</code> Probes](https://github.com/verisurf/verisurf-api/tree/master/web-examples/Probes)
 
 ## <a name="version">Version Information</a>
 Verisurf API 1.0 is included in Verisurf 2017.
