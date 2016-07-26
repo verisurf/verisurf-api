@@ -62,6 +62,7 @@ The following rule applies to all TCP API requests
 - **[<code>View</code> CADView_RotateRight](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_rotateright.md)**
 - **[<code>View</code> CADView_RotateUp](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_rotateup.md)**
 - **[<code>View</code> CADView_RotateDown](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_rotatedown.md)**
+- **[<code>Measure</code> Build](https://github.com/verisurf/verisurf-api/blob/master/documentation/build.md)**
 - **[<code>Measure</code> Measure_Point](https://github.com/verisurf/verisurf-api/blob/master/documentation/measure_point.md)**
 - **[<code>Measure</code> Measure_Line](https://github.com/verisurf/verisurf-api/blob/master/documentation/measure_line.md)**
 - **[<code>Measure</code> Measure_Circle](https://github.com/verisurf/verisurf-api/blob/master/documentation/measure_circle.md)**
