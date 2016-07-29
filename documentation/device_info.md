@@ -21,7 +21,7 @@ A XML response with the following format:
 
 - **response** — default wrapper for all API responses
     - 'command_received' — echos command sent to API
-    - 'deviceinfo' — contains attributes with measurement information
+    - 'device_info' — contains attributes with measurement information
 
 ***
 
@@ -35,7 +35,7 @@ A XML response with the following format:
 ```xml
 <response>
 	<command_received>device_info</command_received>
-	<DeviceInfo 
+	<device_info 
 	id="0" 
 	X="-3.5044802425831776" 
 	Y="1.7999521558749731" 
@@ -53,6 +53,6 @@ A XML response with the following format:
 	PZ="0" 
 	ProbeRadius="0.25">
 	Mouse
-	</DeviceInfo>
+	</device_info>
 </response>
 ```
