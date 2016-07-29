@@ -31,6 +31,10 @@ A XML response with the following format:
 ## Sample Response
 
 ```xml
+<response>
+    <command_received>inspect_plan_info</command_received>
+</response>
+
 <data>
 	<inspect_planinfo>
 		<plan id="0" run_state="0">Report1
