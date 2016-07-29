@@ -13,7 +13,6 @@ The interface for communication with Verisurf is handled through socket communic
 * [Examples](#examples)
 * [Version Information](#version)
 * [FAQ](#faq)
-* [Resources](#resources)
 
 ***
 
@@ -112,5 +111,8 @@ The following rule applies to all TCP API requests
 Verisurf API 1.0 is included in Verisurf 2017.
 
 ## <a name="faq">FAQ</a>
+##### What are the pre-requisites to getting started?
+* A licensed copy of Verisurf 2017
+* Some programming experience
+* Basic understanding of socket communication
 
-## <a name="resources">Resources</a>
