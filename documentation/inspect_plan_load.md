@@ -9,15 +9,15 @@ Returns all currently supported commands accepted by the API
 ***
 
 ## Parameters
-- **None**
+- **id** _(required)_ â€” id of the plan to be loaded
 
 ***
 
 ## Return format
 A XML response with the following format:
 
-- **response** — default wrapper for all API responses
-    - 'command_received' — echos command sent to API
+- **response** â€” default wrapper for all API responses
+    - 'command_received' â€” echos command sent to API
 
 ***
 
