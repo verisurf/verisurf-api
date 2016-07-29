@@ -19,7 +19,7 @@ A XML response with the following format:
 - **response** — default wrapper for all API responses
     - 'command_received' — echos command sent to API
 - **data** — default wrapper for all secondary data API responses
-    - 'inspect_planinfo' — data container for plan info
+    - 'inspect_plan_info' — data container for plan info
 
 ***
 
@@ -36,7 +36,7 @@ A XML response with the following format:
 </response>
 
 <data>
-	<inspect_planinfo>
+	<inspect_plan_info>
 		<plan id="0" run_state="0">Report1
 			<plan_object object_id="0">Point1</plan_object>
 			<plan_object object_id="1">Point2</plan_object>
@@ -45,6 +45,6 @@ A XML response with the following format:
 			<plan_object object_id="4">Plane1</plan_object>
 			<plan_object object_id="5">ScreenShot</plan_object>
 		</plan>
-	</inspect_planinfo>
+	</inspect_plan_info>
 </data>
 ```
