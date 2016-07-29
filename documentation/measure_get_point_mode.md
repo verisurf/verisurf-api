@@ -19,7 +19,7 @@ A XML response with the following format:
 - **response** — default wrapper for all API responses
     - 'command_received' — echos command sent to API
 - **data** — default wrapper for all secondary data API responses
-    - 'measure_pointmode' — contains measure point mode information
+    - 'measure_point_mode' — contains measure point mode information
         - "0" - Single Point
         - "1" - Continuous
         - "2" - Average Point
@@ -40,6 +40,6 @@ A XML response with the following format:
 </response>
 
 <data>
-	<measure_pointmode>0</measure_pointmode>
+	<measure_point_mode>0</measure_pointmode>
 </data>
 ```
