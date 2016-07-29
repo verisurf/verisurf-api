@@ -40,6 +40,6 @@ A XML response with the following format:
 </response>
 
 <data>
-	<measure_point_mode>0</measure_pointmode>
+	<measure_point_mode>0</measure_point_mode>
 </data>
 ```
