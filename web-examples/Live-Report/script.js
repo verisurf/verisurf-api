@@ -35,7 +35,7 @@ $(function () {
     websocket.onmessage = function (event) {
         var domparser = new DOMParser();
         var xmlDoc = domparser.parseFromString(event.data, "text/xml");
-        var info = xmlDoc.getElementsByTagName("DeviceInfo");
+        var info = xmlDoc.getElementsByTagName("device_info");
         if (info.length > 0) {
             verisurf_x.text(ifNullZero(info[0].getAttribute("X")));
             verisurf_px.text(ifNullZero(info[0].getAttribute("PX")));

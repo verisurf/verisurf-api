@@ -29,7 +29,7 @@ function socketConnect() {
         //parse response data from verisurf server
         var domparser = new DOMParser();
         var xmlDoc = domparser.parseFromString(event.data, "text/xml");
-        var info = xmlDoc.getElementsByTagName("DeviceInfo");
+        var info = xmlDoc.getElementsByTagName("device_info");
         if (info.length > 0) {
             verisurf_x = ifNullZero(info[0].getAttribute("X"));
             verisurf_y = ifNullZero(info[0].getAttribute("Y"));
