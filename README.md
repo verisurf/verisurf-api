@@ -40,6 +40,7 @@ The following rule applies to all TCP API requests
 - **[<code>General</code> Command_List](https://github.com/verisurf/verisurf-api/blob/master/documentation/command_list.md)**
 - **[<code>General</code> File_Open](https://github.com/verisurf/verisurf-api/blob/master/documentation/file_open.md)**
 - **[<code>General</code> File_Save](https://github.com/verisurf/verisurf-api/blob/master/documentation/file_save.md)**
+- **[<code>General</code> Version](https://github.com/verisurf/verisurf-api/blob/master/documentation/version.md)**
 - **[<code>View</code> CADView_FitScreen](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_fitscreen.md)**
 - **[<code>View</code> CADView_Wireframe](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_wireframe.md)**
 - **[<code>View</code> CADView_Shaded](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_shaded.md)**
@@ -86,6 +87,7 @@ The following rule applies to all TCP API requests
 - **[<code>Inspect</code> Inspect_Object_Measure](https://github.com/verisurf/verisurf-api/blob/master/documentation/inspect_object_measure.md)**
 - **[<code>Inspect</code> Inspect_Object_Info](https://github.com/verisurf/verisurf-api/blob/master/documentation/inspect_object_info.md)**
 - **[<code>Inspect</code> Inspect_Object_Clear](https://github.com/verisurf/verisurf-api/blob/master/documentation/inspect_object_clear.md)**
+- **[<code>Device</code> Device_List](https://github.com/verisurf/verisurf-api/blob/master/documentation/device_list.md)**
 - **[<code>Device</code> Device_Info](https://github.com/verisurf/verisurf-api/blob/master/documentation/device_info.md)**
 
 ## <a name="error">Error Codes</a>
