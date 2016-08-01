@@ -13,7 +13,7 @@ var verisurf_py = $("#y_nominal");
 var verisurf_pz = $("#z_nominal");
 
 function socketTimerCallback() {
-    websocket.send("<device_info id='0' />\n");
+    websocket.send("<device_info id='1' />\n");
 }
 
 function ifNullZero(value) {
