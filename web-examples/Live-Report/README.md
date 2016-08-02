@@ -4,13 +4,15 @@ The following example utilizes the Verisurf API to create a real time version of
 
 This example is also hosted on http://sdk.verisurf.com/
 
-### Specifications
+### Functionality
 
-This exhibits the following functionality:
 - Set up jquery selectors for table cells
 - Make WebSocket connection and establish callback function to Verisurf polling 4 times a second
 - Parse callback response and update table cells with returned data
 
-### Implementation
+### Utilization
 
-Simply host the 4 included files on the web server of your choice (apache/nginx/nodejs) and the example will be active
+- Enable WEB socket connection within Verisurf
+- Clone or download repository source code
+- Install and configure web server (apache, nginx, etc)
+- Host source files on server and navigate to page via web browser
