@@ -16,7 +16,7 @@ Sets a value in the Verisurf settings file
 ***
 
 ## Parameters
-- **selector** _(required)_ — a string in selector format to retrieve the setting value
+- **selector** _(required)_ — a string in selector format to retrieve the setting value - [**SELECTOR FORMAT DOCUMENTATION**](https://github.com/verisurf/verisurf-api/blob/master/documentation/selector_format.md)
 - **value** _(required)_ — the value to be set for the selected setting
 
 ***
