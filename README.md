@@ -102,6 +102,7 @@ The following rule applies to all TCP API requests
 
 ## <a name="examples">Examples</a>
 ###TCP Examples
+* [<code>C++</code> C++ Juce](https://github.com/verisurf/verisurf-api/tree/master/tcp-examples/C++)
 * [<code>C#</code> C# Winforms](https://github.com/verisurf/verisurf-api/tree/master/tcp-examples/CSharp)
 * [<code>Javascript</code> Electron Bootstrap](https://github.com/verisurf/verisurf-api/tree/master/tcp-examples/Electron)
 * [<code>Javascript</code> NodeJS Command Line](https://github.com/verisurf/verisurf-api/tree/master/tcp-examples/NodeJS)
