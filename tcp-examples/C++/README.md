@@ -2,6 +2,8 @@
 
 The following example utilizes the Verisurf API to create a real time version of a familiar Verisurf report.  This is intended to be a basic example to showcase the functionality of the Verisurf API using TCP Sockets.
 
+This project utilizes the Juce framework https://www.juce.com/
+
 ### Functionality
 
 - Create threaded socket connection to Verisurf
