@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="dGJu2B" name="Verisurf Live-Report" projectType="guiapp"
+              version="1.0.0" bundleIdentifier="com.verisurf.livereport" includeBinaryInAppConfig="1"
+              jucerVersion="4.2.3">
+  <MAINGROUP id="Uq4BoK" name="Verisurf Live-Report">
+    <GROUP id="{2F548988-834D-97F2-CE94-23B37CA33F0F}" name="Source">
+      <FILE id="JCOAiN" name="AsyncSocket.h" compile="0" resource="0" file="Source/AsyncSocket.h"/>
+      <FILE id="kMBkk1" name="background.jpg" compile="0" resource="1" file="Source/background.jpg"/>
+      <FILE id="AOlb8f" name="ConnectionError.h" compile="0" resource="0"
+            file="Source/ConnectionError.h"/>
+      <FILE id="pS9sS8" name="CustomLook.h" compile="0" resource="0" file="Source/CustomLook.h"/>
+      <FILE id="D9d98I" name="DeviceSelector.h" compile="0" resource="0"
+            file="Source/DeviceSelector.h"/>
+      <FILE id="ShXVgw" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="umrQIY" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="LupoCx" name="ReportComponent.h" compile="0" resource="0"
+            file="Source/ReportComponent.h"/>
+      <FILE id="iYMp9p" name="RobotoSlab-Regular.ttf" compile="0" resource="1"
+            file="Source/RobotoSlab-Regular.ttf"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2013 targetFolder="Builds/VisualStudio2013">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="C++"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="C++"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../Development/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../Development/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../Development/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../Development/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../Development/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2013>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

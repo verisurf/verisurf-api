@@ -2,3 +2,6 @@
 **/.idea/
 **/bin
 **/obj
+tcp-examples/C++/Builds/VisualStudio2013/Debug/
+tcp-examples/C++/Builds/VisualStudio2013/Release/
+*.sdf

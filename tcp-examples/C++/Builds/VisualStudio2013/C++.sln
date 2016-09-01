@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2013
+Project("{943C1BA8-683C-023E-387A-DB88F95488E6}") = "C++", "C++.vcxproj", "{226EE020-BBEA-9154-0DAC-F12124FF4150}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{226EE020-BBEA-9154-0DAC-F12124FF4150}.Debug|Win32.ActiveCfg = Debug|Win32
+		{226EE020-BBEA-9154-0DAC-F12124FF4150}.Debug|Win32.Build.0 = Debug|Win32
+		{226EE020-BBEA-9154-0DAC-F12124FF4150}.Release|Win32.ActiveCfg = Release|Win32
+		{226EE020-BBEA-9154-0DAC-F12124FF4150}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
