@@ -36,7 +36,7 @@ A XML response with the following format:
 </response>
 
 <data>
-	<inspect_planobjectinfo>
+	<inspect_object_info>
 		<object id="0">Point1<property name="X" measured="-0.32183760807056133" nominal="-0.32183760807056133" deviation="0"/>
 			<property name="Y" measured="0.3481161192270939" nominal="0.3481161192270939" deviation="0"/>
 			<property name="Z" measured="0.94474000000000002" nominal="0.94474000000000002" deviation="0"/>
@@ -46,6 +46,6 @@ A XML response with the following format:
 			<property name="3D Position" measured="0" nominal="0" deviation="0"/>
 			<property name="Position" measured="0" nominal="0" deviation="0"/>
 		</object>
-	</inspect_planobjectinfo>
+	</inspect_object_info>
 </data>
 ```
