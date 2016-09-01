@@ -46,7 +46,7 @@ The following rule applies to all TCP API requests
 - **[<code>View</code> CADView_FitScreen](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_fitscreen.md)**
 - **[<code>View</code> CADView_Wireframe](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_wireframe.md)**
 - **[<code>View</code> CADView_Shaded](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_shaded.md)**
-- - **[<code>View</code> CADView_Shaded_Outline](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_shaded_outline.md)**
+- **[<code>View</code> CADView_Shaded_Outline](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_shaded_outline.md)**
 - **[<code>View</code> CADView_Top](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_top.md)**
 - **[<code>View</code> CADView_Front](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_front.md)**
 - **[<code>View</code> CADView_Right](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_right.md)**
