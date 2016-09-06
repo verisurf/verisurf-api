@@ -20,7 +20,7 @@ A XML response with the following format:
     - 'command_received' — echos command sent to API
 
 - **data** — default wrapper for all secondary data API responses
-    - 'inspect_planobjectinfo' — container for object information
+    - 'inspect_object_info' — container for object information
 	
 ***
 
