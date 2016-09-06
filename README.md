@@ -43,6 +43,7 @@ The following rule applies to all TCP API requests
 - **[<code>General</code> Version](https://github.com/verisurf/verisurf-api/blob/master/documentation/version.md)**
 - **[<code>General</code> Settings_Get](https://github.com/verisurf/verisurf-api/blob/master/documentation/settings_get.md)**
 - **[<code>General</code> Settings_Set](https://github.com/verisurf/verisurf-api/blob/master/documentation/settings_set.md)**
+- **[<code>General</code> Import_Data](https://github.com/verisurf/verisurf-api/blob/master/documentation/import_data.md)**
 - **[<code>View</code> CADView_FitScreen](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_fitscreen.md)**
 - **[<code>View</code> CADView_Wireframe](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_wireframe.md)**
 - **[<code>View</code> CADView_Shaded](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_shaded.md)**
@@ -65,6 +66,9 @@ The following rule applies to all TCP API requests
 - **[<code>View</code> CADView_RotateRight](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_rotateright.md)**
 - **[<code>View</code> CADView_RotateUp](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_rotateup.md)**
 - **[<code>View</code> CADView_RotateDown](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_rotatedown.md)**
+- **[<code>Database</code> Object_List](https://github.com/verisurf/verisurf-api/blob/master/documentation/object_list.md)**
+- **[<code>Database</code> Object_Selection_Set](https://github.com/verisurf/verisurf-api/blob/master/documentation/object_selection_set.md)**
+- **[<code>Database</code> Object_Selection_Clear](https://github.com/verisurf/verisurf-api/blob/master/documentation/object_selection_clear.md)**
 - **[<code>Measure</code> Build](https://github.com/verisurf/verisurf-api/blob/master/documentation/build.md)**
 - **[<code>Measure</code> Measure_Point](https://github.com/verisurf/verisurf-api/blob/master/documentation/measure_point.md)**
 - **[<code>Measure</code> Measure_Line](https://github.com/verisurf/verisurf-api/blob/master/documentation/measure_line.md)**
@@ -92,6 +96,8 @@ The following rule applies to all TCP API requests
 - **[<code>Inspect</code> Inspect_Object_Clear](https://github.com/verisurf/verisurf-api/blob/master/documentation/inspect_object_clear.md)**
 - **[<code>Device</code> Device_List](https://github.com/verisurf/verisurf-api/blob/master/documentation/device_list.md)**
 - **[<code>Device</code> Device_Info](https://github.com/verisurf/verisurf-api/blob/master/documentation/device_info.md)**
+- **[<code>Reporting</code> Report_Create](https://github.com/verisurf/verisurf-api/blob/master/documentation/report_create.md)**
+- **[<code>Reporting</code> Report_Generate](https://github.com/verisurf/verisurf-api/blob/master/documentation/report_generate.md)**
 
 ## <a name="error">Error Codes</a>
 | Code | Issue | Cause |
