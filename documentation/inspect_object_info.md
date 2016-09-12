@@ -10,6 +10,7 @@ Returns measurement information for object with specific id
 
 ## Parameters
 - **id** _(required)_ — object id to be retrieved
+- **fullData** — return all property data regardless of settings
 
 ***
 
