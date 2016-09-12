@@ -9,7 +9,7 @@ Generates the output from the currently selected report object, contrary to norm
 ***
 
 ## Parameters
-- **none**
+- **openOnSave** _(optional)_ - will open the file after generation
 
 ***
 
