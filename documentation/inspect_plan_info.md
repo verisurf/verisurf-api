@@ -9,7 +9,7 @@ Returns object information for plan with specific id
 ***
 
 ## Parameters
-- **id** _(required)_ — object id to be retrieved
+- **id** _(optional)_ — if included plan info of index, if omitted current plan is used
 
 ***
 
