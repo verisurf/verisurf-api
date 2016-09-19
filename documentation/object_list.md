@@ -35,7 +35,7 @@ A XML response with the following format:
 	<command_received>object_list</command_received>
 </response>
 
-<data>
+<data command="object_list">
 	<object_info>
 		<object id="0" type="Point">Point1</object>
 		<object id="1" type="Line" group="Feature">Line1</object>
