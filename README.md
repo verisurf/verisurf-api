@@ -41,9 +41,11 @@ The following rule applies to all TCP API requests
 - **[<code>General</code> File_Open](https://github.com/verisurf/verisurf-api/blob/master/documentation/file_open.md)**
 - **[<code>General</code> File_Save](https://github.com/verisurf/verisurf-api/blob/master/documentation/file_save.md)**
 - **[<code>General</code> Version](https://github.com/verisurf/verisurf-api/blob/master/documentation/version.md)**
+- **[<code>General</code> System_Get](https://github.com/verisurf/verisurf-api/blob/master/documentation/system_get.md)**
 - **[<code>General</code> Settings_Get](https://github.com/verisurf/verisurf-api/blob/master/documentation/settings_get.md)**
 - **[<code>General</code> Settings_Set](https://github.com/verisurf/verisurf-api/blob/master/documentation/settings_set.md)**
 - **[<code>General</code> Import_Data](https://github.com/verisurf/verisurf-api/blob/master/documentation/import_data.md)**
+- **[<code>General</code> Screenshot](https://github.com/verisurf/verisurf-api/blob/master/documentation/screenshot.md)**
 - **[<code>View</code> CADView_FitScreen](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_fitscreen.md)**
 - **[<code>View</code> CADView_Wireframe](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_wireframe.md)**
 - **[<code>View</code> CADView_Shaded](https://github.com/verisurf/verisurf-api/blob/master/documentation/cadview_shaded.md)**
