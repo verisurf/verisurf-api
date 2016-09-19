@@ -35,7 +35,7 @@ A XML response with the following format:
     <command_received>inspect_plan_list</command_received>
 </response>
 
-<data>
+<data command="inspect_plan_list">
 	<plans>
 		<plan id="0">Bolt Hole Inspection</plan>
 		<plan id="1">Fitting Test Inspection</plan>
