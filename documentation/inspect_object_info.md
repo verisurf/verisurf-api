@@ -36,7 +36,7 @@ A XML response with the following format:
 	<command_received>inspect_object_info</command_received>
 </response>
 
-<data>
+<data command="inspect_object_info">
 	<inspect_object_info>
 		<object id="0">Point1<property name="X" measured="-0.32183760807056133" nominal="-0.32183760807056133" deviation="0"/>
 			<property name="Y" measured="0.3481161192270939" nominal="0.3481161192270939" deviation="0"/>
