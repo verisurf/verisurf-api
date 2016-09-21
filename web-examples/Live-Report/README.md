@@ -7,7 +7,7 @@ This example is also hosted on http://sdk.verisurf.com/
 ### Functionality
 
 - Set up jquery selectors for table cells
-- Make WebSocket connection and establish callback function to Verisurf polling 4 times a second
+- Make WebSocket connection and establish callback function to Verisurf polling for data
 - Parse callback response and update table cells with returned data
 
 ### Utilization
