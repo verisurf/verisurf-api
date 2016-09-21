@@ -11,5 +11,7 @@ The following example utilizes the Verisurf API to create small application with
 
 - Enable TCP socket connection within Verisurf
 - Clone or download repository source code
-- Use node package manager to install dependencies
-- Start application using Electron
+- Download and install NodeJS - https://nodejs.org/en/
+- Use Node Package Manager to install Electron globally "npm install -g electron"
+- Use Node Package Manage to install dependencies in the project folder "npm install"
+- Open a command prompt or terminal window, navigate to source directory then type "electron ."
