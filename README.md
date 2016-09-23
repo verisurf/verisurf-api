@@ -120,6 +120,8 @@ The following rule applies to all TCP API requests
 ###WEB Examples
 * [<code>Javascript</code> Live-Report](https://github.com/verisurf/verisurf-api/tree/master/web-examples/Live-Report)
 * [<code>Javascript</code> Probes](https://github.com/verisurf/verisurf-api/tree/master/web-examples/Probes)
+* [<code>Javascript</code> Part-Selector](https://github.com/verisurf/verisurf-api/tree/master/web-examples/Part-Selector)
+* [<code>Javascript</code> Detector](https://github.com/verisurf/verisurf-api/tree/master/web-examples/Detector)
 
 ## <a name="version">Version Information</a>
 Verisurf API 1.0 is included in Verisurf 2017.
