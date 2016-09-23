@@ -2,9 +2,9 @@
 **/.idea/
 **/bin
 **/obj
+*.sdf
 tcp-examples/C++/Builds/VisualStudio2013/Debug/
 tcp-examples/C++/Builds/VisualStudio2013/Release/
-*.sdf
-web-examples/index.html
 web-examples/images/
+web-examples/index.html
 web-examples/connection-test/index.html
