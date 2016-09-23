@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Verisurf SDK Demo</title>
+    <style>
+        body {
+            background: #ffffff url(images/background.png) repeat;
+        }
+        canvas {
+            margin: 50px auto;
+        }
+    </style>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/phaser.js"></script>
+    <script src="scripts/variables.js"></script>
+    <script src="scripts/boot.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/error.js"></script>
+    <script src="scripts/socket.js"></script>
+</head>
+<body>
+<script>
+    (function () {
+        game = new Phaser.Game(800, 450, Phaser.CANVAS, 'game');
+        game.state.add('boot', Verisurf.Boot);
+        game.state.add('main', Verisurf.Main);
+        game.state.add('game', Verisurf.Game);
+        game.state.add('error', Verisurf.Error);
+        game.state.start('boot');
+    })();
+</script>
+</body>
+</html>

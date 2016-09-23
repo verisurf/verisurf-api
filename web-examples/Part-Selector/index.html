@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Verisurf SDK</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Custom Theme CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div>
+        <i class="fa fa-cubes"></i> Verisurf Part Selector
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/1.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Analysis\\FARO_DEMO_PART_MM.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/2.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Analysis\\FREE FORM SURFACE_MM.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/3.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Analysis\\HandySCAN 3D_Demo part.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/4.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Analysis\\RPS_MESH_ALIGNMENT_MM.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/5.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Analysis\\SAMPLE_1.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/6.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Analysis\\Space Part.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/7.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Analysis\\Surface Points.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/8.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Analysis\\WINDBLADE.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/9.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Analysis\\X33MODEL.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/10.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Demo Parts\\ARM PART.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/11.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Demo Parts\\MASTER3DGAGE.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/12.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Demo Parts\\RON\'S PART.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/13.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\Demo Parts\\VERISURF TUTOR PART.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/14.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\MBD Samples\\COMPOSITE.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/15.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\MBD Samples\\GAGE R&R SURFACES.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="part">
+                <img src="images/16.jpg" alt="part1" class="img-responsive">
+                <button class="btn btn-primary form-control" onclick="LoadPart('MCX Example Files\\MBD Samples\\OCTAGON PART.mcam')">
+                    <i class="fa fa-upload"></i> Load Part
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Core JavaScript Files -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>

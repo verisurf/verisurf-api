@@ -27,9 +27,10 @@ $(function () {
     websocket = new WebSocket("ws://localhost:6734");
 
     websocket.onopen = function (event) {
+        websocket.send("<build />\n");
         timer = setInterval(function () {
             socketTimerCallback();
-        }, 250);
+        }, 100);
     };
 
     websocket.onmessage = function (event) {

@@ -1,0 +1,26 @@
+body {
+    font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: url(images/background.png) repeat;
+}
+
+nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 0 10px 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+.part {
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #555;
+    text-align: center;
+    padding: 5px;
+}
+
+.row {
+    margin-bottom: 20px;
+}

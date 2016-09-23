@@ -19,11 +19,12 @@ function socketConnect() {
     websocket.onopen = function (event) {
         //change game state to begin game
         game.state.start('game');
+        //start build mode to take measurements
         websocket.send("<build />\n");
         //set timer callback to get i/j/k from verisurf
         timer = setInterval(function () {
             socketTimerCallback();
-        }, 33);
+        }, 1000);
     };
     //
     websocket.onmessage = function (event) {
@@ -34,12 +35,7 @@ function socketConnect() {
         if (info.length > 0) {
             verisurf_x = ifNullZero(info[0].getAttribute("X"));
             verisurf_y = ifNullZero(info[0].getAttribute("Y"));
-            verisurf_z = ifNullZero(info[0].getAttribute("Z"));
-            verisurf_i = ifNullZero(info[0].getAttribute("I"));
-            verisurf_j = ifNullZero(info[0].getAttribute("J"));
-            verisurf_k = ifNullZero(info[0].getAttribute("K"));
         }
-        console.log(event.data);
     };
     //
     websocket.onclose = function (event) {
