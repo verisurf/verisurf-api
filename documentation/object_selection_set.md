@@ -1,6 +1,6 @@
 # Command
 
-    <Object_Selection_Set ids='' />
+    <Object_Selection_Set id='' />
 
 ## Description
 
