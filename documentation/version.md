@@ -17,7 +17,6 @@ Returns API version
 A XML response with the following format:
 
 - **response** — default wrapper for all API responses
-    - 'command_received' — echos command sent to API
     - 'version' — contains running API version
 
 ***
@@ -31,7 +30,10 @@ A XML response with the following format:
 
 ```xml
 <response>
-	<command_received>version</command_received>
-	<version>1</version>
+	<success>
+		<command_received>version</command_received>
+		<data>1.0.3</data>
+		<request_id>1</request_id>
+	</success>
 </response>
 ```
