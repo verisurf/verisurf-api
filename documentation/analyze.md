@@ -4,7 +4,7 @@
 
 ## Description
 
-Runs analyze on currently selected objects
+Runs analysis on currently selected analysis objects
 
 ***
 
@@ -17,9 +17,20 @@ Runs analyze on currently selected objects
 A XML response with the following format:
 
 - **response** - default wrapper for all API responses
-    - 'command_received' - echos command sent to API
 
 ***
 
 ## Errors
 - **None**
+
+***
+
+## Sample Response
+```xml
+<response>
+	<success>
+		<command_received>analyze</command_received>
+		<request_id>1</request_id>
+	</success>
+</response>
+```
