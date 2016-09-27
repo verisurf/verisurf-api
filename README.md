@@ -36,7 +36,7 @@ The following rules apply to all API requests
 The following rule applies to all TCP API requests
 * All requests must be terminated with a newline character - &lt;Inspect_Plan_List /&gt;\n
 
-###References
+## List of Commands
 **[Complete Function Reference](https://github.com/verisurf/verisurf-api/blob/master/documentation/README.md)**
 
 ## <a name="error">Error Codes</a>
