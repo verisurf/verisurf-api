@@ -20,7 +20,6 @@ Returns measurement device information for specific device or global points
 A XML response with the following format:
 
 - **response** — default wrapper for all API responses
-    - 'command_received' — echos command sent to API
     - 'device_info' — contains attributes with measurement information
 
 ***
@@ -34,25 +33,22 @@ A XML response with the following format:
 
 ```xml
 <response>
-	<command_received>device_info</command_received>
-	<device_info 
-	id="0" 
-	X="-3.5044802425831776" 
-	Y="1.7999521558749731" 
-	Z="-0.024870884228536172" 
-	DX="-2.8928114847412703" 
-	DY="1.2165142637796156" 
-	DZ="-0.024870884228536172" 
-	D3="3.1382931349879608" 
-	P0="6.2765862699759216" 
-	I="0" 
-	J="0" 
-	K="1" 
-	PX="-0.61166875784190711" 
-	PY="0.58343789209535757" 
-	PZ="0" 
-	ProbeRadius="0.25">
-	Mouse
-	</device_info>
+	<success>
+		<command_received>device_info</command_received>
+		<data>
+			<device_info 
+			id="0" 
+			X="11.502328647260969" 
+			Y="0.00093040743343797395" 
+			Z="2.2474214800824512" 
+			I="0" 
+			J="0" 
+			K="1" 
+			ProbeRadius="0.25">
+			Mouse
+			</device_info>
+		</data>
+		<request_id>1</request_id>
+	</success>
 </response>
 ```
