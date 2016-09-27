@@ -17,8 +17,7 @@ Returns object information for plan with specific id
 A XML response with the following format:
 
 - **response** — default wrapper for all API responses
-    - 'command_received' — echos command sent to API
-- **data** — default wrapper for all secondary data API responses
+    - **data** — default wrapper for all secondary data API responses
     - 'inspect_plan_info' — data container for plan info
 
 ***
@@ -31,20 +30,27 @@ A XML response with the following format:
 ## Sample Response
 
 ```xml
+<!-- RESPONSE 1 -->
 <response>
-    <command_received>inspect_plan_info</command_received>
+    <success>
+        <command_received>inspect_plan_info</command_received>
+        <acknowledgement />
+        <request_id>1</request_id>
+    </success>
 </response>
-
-<data command="inspect_plan_info">
-	<inspect_plan_info>
-		<plan id="0" run_state="0">Report1
-			<plan_object object_id="0">Point1</plan_object>
-			<plan_object object_id="1">Point2</plan_object>
-			<plan_object object_id="2">Point3</plan_object>
-			<plan_object object_id="3">Point4</plan_object>
-			<plan_object object_id="4">Plane1</plan_object>
-			<plan_object object_id="5">ScreenShot</plan_object>
-		</plan>
-	</inspect_plan_info>
-</data>
+<!-- RESPONSE 2 -->
+<response>
+	<success>
+		<command_received>inspect_plan_info</command_received>
+		<data>
+			<inspect_plan_info>
+				<plan id="0" run_state="1">Report1
+				<plan_object object_id="0">Point1</plan_object>
+				</plan>
+			</inspect_plan_info>
+		</data>
+		<completed />
+		<request_id>1</request_id>
+	</success>
+</response>
 ```
