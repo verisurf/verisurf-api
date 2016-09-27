@@ -46,6 +46,9 @@ Responses from the API follow a consistent response format where the top level e
 Below is a sample response from the device_info command.  Commands that can be run in real time follow this format returning the command requested, the request id and optionally data.
 
 ```xml
+<!-- REQUEST -->
+&lt;device_info id='0' /&gt;
+<!-- RESPONSE -->
 <response>
 	<success>
 		<command_received>device_info</command_received>
@@ -60,6 +63,8 @@ Below is a sample response from the device_info command.  Commands that can be r
 If the command requires additional time to execute such as the inspect_plan_list command it will first send an acknoledgement that the command was recieved then follow with the data response.  Commands that follow this format will be documented as such, below is an example response.
 
 ```xml
+<!-- REQUEST -->
+&lt;inspect_plan_list /&gt;
 <!-- RESPONSE 1 -->
 <response>
 	<success>
@@ -68,7 +73,6 @@ If the command requires additional time to execute such as the inspect_plan_list
 		<request_id>TEST-02</request_id>
 	</success>
 </response>
-
 <!-- RESPONSE 2 -->
 <response>
 	<success>
@@ -88,6 +92,9 @@ If the command requires additional time to execute such as the inspect_plan_list
 If the response is in error it will include a code and description element to assist you in resolving the error.  Below is a sample error response.
 
 ```xml
+<!-- REQUEST -->
+&lt;file_open /&gt;
+<!-- RESPONSE -->
 <response>
 	<error>
 		<command_received>file_open</command_received>
