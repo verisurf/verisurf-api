@@ -18,9 +18,7 @@ Returns measurement information for object with specific id
 A XML response with the following format:
 
 - **response** — default wrapper for all API responses
-    - 'command_received' — echos command sent to API
-
-- **data** — default wrapper for all secondary data API responses
+    - **data** — default wrapper for all secondary data API responses
     - 'inspect_object_info' — container for object information
 	
 ***
