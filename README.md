@@ -114,6 +114,7 @@ If the response is in error it will include a code and description element to as
 | 400 | Bad Request | Request not in XML format |
 | 404 | Command Unknown | Command not in Command List |
 | 406 | Missing Parameter | Required parameter missing from request |
+| 500 | Callback Limit | Data missing for response on server |
 
 ## <a name="examples">Examples</a>
 ###TCP Examples
