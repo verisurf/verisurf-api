@@ -23,9 +23,20 @@ Imports external measurement data into Verisurf.  Supports specific formats of t
 A XML response with the following format:
 
 - **response** - default wrapper for all API responses
-    - 'command_received' - echos command sent to API
 
 ***
 
 ## Errors
 - **406** - Missing parameter "filename" in request
+ 
+***
+
+## Sample Response
+```xml
+<response>
+	<success>
+		<command_received>import_data</command_received>
+		<request_id>1</request_id>
+	</success>
+</response>
+```
