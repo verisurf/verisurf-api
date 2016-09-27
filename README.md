@@ -47,7 +47,7 @@ Below is a sample response from the device_info command.  Commands that can be r
 
 ```xml
 <!-- REQUEST -->
-&lt;device_info id='0' /&gt;
+<device_info id='0' />
 <!-- RESPONSE -->
 <response>
 	<success>
@@ -64,7 +64,7 @@ If the command requires additional time to execute such as the inspect_plan_list
 
 ```xml
 <!-- REQUEST -->
-&lt;inspect_plan_list /&gt;
+<inspect_plan_list />
 <!-- RESPONSE 1 -->
 <response>
 	<success>
@@ -93,7 +93,7 @@ If the response is in error it will include a code and description element to as
 
 ```xml
 <!-- REQUEST -->
-&lt;file_open /&gt;
+<file_open />
 <!-- RESPONSE -->
 <response>
 	<error>
