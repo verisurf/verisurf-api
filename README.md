@@ -50,7 +50,7 @@ Below is a sample response from the device_info command.  Commands that can be r
 	<success>
 		<command_received>device_info</command_received>
 		<data>
-			<device_info id="0" X="-7.8234033634455082" Y="2.0061078321524075" Z="-7.8342537399073785e-005">CMM</device_info>
+			<device_info id="0" X="-7.8234033634455082">CMM</device_info>
 		</data>
 		<request_id>TEST-01</request_id>
 	</success>
