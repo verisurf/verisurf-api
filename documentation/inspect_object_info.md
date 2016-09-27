@@ -32,21 +32,39 @@ A XML response with the following format:
 
 ## Sample Response
 ```xml
+<!-- RESPONSE 1 -->
 <response>
-	<command_received>inspect_object_info</command_received>
+    <success>
+        <command_received>inspect_object_info</command_received>
+        <acknowledgement />
+        <request_id>1</request_id>
+    </success>
 </response>
-
-<data command="inspect_object_info">
-	<inspect_object_info>
-		<object id="0">Point1<property name="X" measured="-0.32183760807056133" nominal="-0.32183760807056133" deviation="0"/>
-			<property name="Y" measured="0.3481161192270939" nominal="0.3481161192270939" deviation="0"/>
-			<property name="Z" measured="0.94474000000000002" nominal="0.94474000000000002" deviation="0"/>
-			<property name="I" measured="0.42770732281531232" nominal="0.42770732281531232" deviation="0"/>
-			<property name="J" measured="0.18225313202975177" nominal="0.18225313202975177" deviation="0"/>
-			<property name="K" measured="0.88535317352766296" nominal="0.88535317352766296" deviation="0"/>
-			<property name="3D Position" measured="0" nominal="0" deviation="0"/>
-			<property name="Position" measured="0" nominal="0" deviation="0"/>
-		</object>
-	</inspect_object_info>
-</data>
+<!-- RESPONSE 2 -->
+<response>
+	<success>
+		<command_received>inspect_object_info</command_received>
+		<data>
+			<inspect_object_info>
+				<object id="0">Point1<property name="X" nominal="-6.502131725834623" tolmin="-0.01" tolmax="0.01" measured="-6.502131725834623" deviation="0"/>
+					<property name="Y" nominal="3.0448689183020363" tolmin="-0.01" tolmax="0.01" measured="3.0448689183020363" deviation="0"/>
+					<property name="Z" nominal="0.00071101086684584531" tolmin="-0.01" tolmax="0.01" measured="0.00071101086684584531" deviation="0"/>
+					<property name="I" nominal="0" tolmin="-0.01" tolmax="0.01" measured="0" deviation="0"/>
+					<property name="J" nominal="0" tolmin="-0.01" tolmax="0.01" measured="0" deviation="0"/>
+					<property name="K" nominal="1" tolmin="-0.01" tolmax="0.01" measured="1" deviation="0"/>
+					<property name="2D Radius" nominal="7.1797593072293822" tolmin="-0.01" tolmax="0.01" measured="7.1797593072293822" deviation="0"/>
+					<property name="2D Angle" nominal="154.90688079322467" tolmin="-0.10000000000000001" tolmax="0.10000000000000001" measured="154.90688079322467" deviation="0"/>
+					<property name="3D Radius" nominal="7.1797593424350508" tolmin="-0.01" tolmax="0.01" measured="7.1797593424350508" deviation="0"/>
+					<property name="3D Angle" nominal="0.0056739954616604497" tolmin="-0.10000000000000001" tolmax="0.10000000000000001" measured="0.0056739954616604497" deviation="0"/>
+					<property name="3D Position" nominal="0" tolmin="-0.01" tolmax="0.01" measured="0" deviation="0"/>
+					<property name="Position" nominal="0" tolmax="0.01" measured="0" deviation="0"/>
+					<property name="MMC" nominal="0" tolmax="0.01" measured="0" deviation="0"/>
+					<property name="LMC" nominal="0" tolmax="0.01" measured="0" deviation="0"/>
+				</object>
+			</inspect_object_info>
+		</data>
+		<completed />
+		<request_id>1</request_id>
+	</success>
+</response>
 ```
