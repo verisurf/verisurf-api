@@ -27,7 +27,7 @@ To first get started you'll need to enable the socket connection interface, this
 ####TCP Test
 If telnet is enable on your machine you may easily test the TCP interface by opening a command prompt and typing "telnet localhost 33666", on success you should see the Verisurf API welcome message.
 
-####WEB
+####WEB Test
 You may test the WEB interface by clicking the following link and clicking the "Start Test" button [Verisurf WebSocket Test](http://sdk.verisurf.com/connection-test)
 
 ## <a name="requests">Requests</a>
