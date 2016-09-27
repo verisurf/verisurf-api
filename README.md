@@ -7,16 +7,18 @@ The interface for communication with Verisurf is handled through socket communic
 ***
 
 ## Overview
-* [Connection Basics](#connection)
-* [Sending Requests](#requests)
-* [Error Codes](#error)
+* [Basics](#basics)
+* [Requests](#requests)
+* [Responses](#responses)
+* [Commands](#commands)
+* [Errors](#errors)
 * [Examples](#examples)
-* [Version Information](#version)
+* [Version](#version)
 * [FAQ](#faq)
 
 ***
 
-## <a name="connection">Connection Basics</a>
+## <a name="basics">Basics</a>
 ####Enabling the API
 To first get started you'll need to enable the socket connection interface, this can be done by opening Verisurf preferences and enabling the API method you intend to use.  If you change the port number during this step be sure to modify all examples with the modified port number.
 
@@ -28,18 +30,78 @@ If telnet is enable on your machine you may easily test the TCP interface by ope
 ####WEB
 You may test the WEB interface by clicking the following link and clicking the "Start Test" button [Verisurf WebSocket Test](http://sdk.verisurf.com/connection-test)
 
-## <a name="requests">Sending Requests</a>
-The following rules apply to all API requests
-* All requests must be in XML format - ex. &lt;Command_List /&gt;
-* All requests are case insensitive - File_Open == FILE_OPEN == file_open
+## <a name="requests">Requests</a>
+All requests sent to the Verisurf API are done in simple XML. Following the format of:
 
-The following rule applies to all TCP API requests
-* All requests must be terminated with a newline character - &lt;Inspect_Plan_List /&gt;\n
+&lt;command_name /&gt; or &lt;command_name&gt;&lt;/command_name&gt;
 
-## List of Commands
-**[Complete Function Reference](https://github.com/verisurf/verisurf-api/blob/master/documentation/README.md)**
+* All requests must be valid XML. 
+* All command and argument names are case insensitive; however, the data of arguments is case sensitive.
+* When using the TCP API all commands must be terminated by a newline character &lt;command_name /&gt;\n
+* All requests may include a custom request id attribute to overwrite the default incremental session counter. &lt;command_name request_id='Alphanumeric' /&gt;
 
-## <a name="error">Error Codes</a>
+## <a name="responses">Responses</a>
+Responses from the API follow a consistent response format where the top level element is always &lt;response&gt; with the first child being either &lt;success&gt; or &lt;error&gt;
+
+Below is a sample response from the device_info command.  Commands that can be run in real time follow this format returning the command requested, the request id and optionally data.
+
+```xml
+<response>
+	<success>
+		<command_received>device_info</command_received>
+		<data>
+			<device_info id="0" X="-7.8234033634455082" Y="2.0061078321524075" Z="-7.8342537399073785e-005">CMM</device_info>
+		</data>
+		<request_id>TEST-01</request_id>
+	</success>
+</response>
+```
+
+If the command requires additional time to execute such as the inspect_plan_list command it will first send an acknoledgement that the command was recieved then follow with the data response.  Commands that follow this format will be documented as such, below is an example response.
+
+```xml
+<!-- RESPONSE 1 -->
+<response>
+	<success>
+		<command_received>inspect_plan_list</command_received>
+		<acknowledgement />
+		<request_id>TEST-02</request_id>
+	</success>
+</response>
+
+<!-- RESPONSE 2 -->
+<response>
+	<success>
+		<command_received>inspect_plan_list</command_received>
+		<data>
+			<plans>
+				<plan id="0">Standard Inspection</plan>
+				<plan id="1">Alternate Inspection</plan>
+			</plans>
+		</data>
+		<completed />
+		<request_id>TEST-02</request_id>
+	</success>
+</response>
+```
+
+If the response is in error it will include a code and description element to assist you in resolving the error.  Below is a sample error response.
+
+```xml
+<response>
+	<error>
+		<command_received>file_open</command_received>
+		<code>406</code>
+		<description>Missing Required Parameter : FILENAME</description>
+		<request_id>TEST-03</request_id>
+	</error>
+</response>
+```
+
+## <a name="commands">Commands</a>
+**[Function Reference](https://github.com/verisurf/verisurf-api/blob/master/documentation/README.md)**
+
+## <a name="errors">Errors</a>
 | Code | Issue | Cause |
 |------|-------|------------|
 | 400 | Bad Request | Request not in XML format |
@@ -61,7 +123,7 @@ The following rule applies to all TCP API requests
 * [<code>Javascript</code> Part-Selector](https://github.com/verisurf/verisurf-api/tree/master/web-examples/Part-Selector)
 * [<code>Javascript</code> Detector](https://github.com/verisurf/verisurf-api/tree/master/web-examples/Detector)
 
-## <a name="version">Version Information</a>
+## <a name="version">Version</a>
 Verisurf API 1.0 is included in Verisurf 2017.
 
 ## <a name="faq">FAQ</a>
