@@ -23,10 +23,10 @@ To first get started you'll need to enable the socket connection interface, this
 ![Verisurf API Preferences](https://github.com/verisurf/verisurf-api/blob/master/documentation/images/api-enabled.png)
 
 ####TCP Test
-You may test the TCP socket by opening a command prompt window on your local machine and typing "telnet localhost 33666", after doing so you should see the Verisurf API welcome message.
+If telnet is enable on your machine you may easily test the TCP interface by opening a command prompt and typing "telnet localhost 33666", on success you should see the Verisurf API welcome message.
 
 ####WEB
-You may test the WEB socket by clicking the following link and clicking the "Start Test" button [Verisurf WebSocket Test](http://sdk.verisurf.com/connection-test)
+You may test the WEB interface by clicking the following link and clicking the "Start Test" button [Verisurf WebSocket Test](http://sdk.verisurf.com/connection-test)
 
 ## <a name="requests">Sending Requests</a>
 The following rules apply to all API requests
