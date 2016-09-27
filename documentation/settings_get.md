@@ -17,7 +17,6 @@ Reads the value from the Verisurf settings file
 A XML response with the following format:
 
 - **response** — default wrapper for all API responses
-    - 'command_received' — echos command sent to API
     - 'setting_value' — value of the selected setting
 
 ***
@@ -38,7 +37,10 @@ A XML response with the following format:
 ## Sample Response
 ```xml
 <response>
-	<command_received>settings_get</command_received>
-	<setting_value>1</setting_value>
+	<success>
+		<command_received>settings_get</command_received>
+		<data>0</data>
+		<request_id>1</request_id>
+	</success>
 </response>
 ```
