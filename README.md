@@ -22,7 +22,7 @@ The interface for communication with Verisurf is handled through socket communic
 ####Enabling the API
 To first get started you'll need to enable the socket connection interface, this can be done by opening Verisurf preferences and enabling the API method you intend to use.  If you change the port number during this step be sure to modify all examples with the modified port number.
 
-![Verisurf API Preferences](https://github.com/verisurf/verisurf-api/blob/master/documentation/images/api-enabled.png)
+![Verisurf API Preferences](https://github.com/verisurf/verisurf-api/tree/Verisurf2017/documentation/images/api-enabled.png)
 
 ####TCP Test
 If telnet is enable on your machine you may easily test the TCP interface by opening a command prompt and typing "telnet localhost 33666", on success you should see the Verisurf API welcome message.
@@ -106,7 +106,7 @@ If the response is in error it will include a code and description element to as
 ```
 
 ## <a name="commands">Commands</a>
-**[Function Reference](https://github.com/verisurf/verisurf-api/blob/master/documentation/README.md)**
+**[Function Reference](https://github.com/verisurf/verisurf-api/tree/Verisurf2017/documentation/README.md)**
 
 ## <a name="errors">Errors</a>
 | Code | Issue | Cause |
@@ -139,4 +139,3 @@ Verisurf API 1.0 is included in Verisurf 2017.
 * A licensed copy of Verisurf 2017
 * Some programming experience
 * Basic understanding of socket communication
-
