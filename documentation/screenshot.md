@@ -17,8 +17,7 @@ Returns the path to a screenshot of the current CAD window
 A XML response with the following format:
 
 - **response** - default wrapper for all API responses
-    - 'command_received' - echos command sent to API
-- **data** — default wrapper for all secondary data API responses
+    - **data** — default wrapper for all secondary data API responses
 
 ***
 
@@ -27,9 +26,21 @@ A XML response with the following format:
 
 ## Sample Response
 ```xml
+<!-- RESPONSE 1 -->
 <response>
-	<command_received>screenshot</command_received>
+    <success>
+        <command_received>screenshot</command_received>
+        <acknowledgement />
+        <request_id>1</request_id>
+    </success>
 </response>
-
-<data command="screenshot">C:\Users\matth\AppData\Local\Temp\Mastercam 2017\DXLLOS1BQ1\T.png</data>
+<!-- RESPONSE 2 -->
+<response>
+	<success>
+		<command_received>screenshot</command_received>
+		<data>C:\Users\verisurf\AppData\Local\Temp\Mastercam 2017\test.png</data>
+		<completed />
+		<request_id>1</request_id>
+	</success>
+</response>
 ```
