@@ -44,9 +44,9 @@ A XML response with the following format:
         <command_received>inspect_plan_list</command_received>
         <data>
             <plans>
-		<plan id="0">Bolt Hole Inspection</plan>
-		<plan id="1">Fitting Test Inspection</plan>
-	    </plans>
+                <plan id="0">Bolt Hole Inspection</plan>
+                <plan id="1">Fitting Test Inspection</plan>
+            </plans>
         </data>
         <completed />
         <request_id>1</request_id>
