@@ -20,7 +20,6 @@ Returns specific variables used in the operation of Verisurf
 A XML response with the following format:
 
 - **response** — default wrapper for all API responses
-    - 'command_received' — echos command sent to API
     - 'system' — contains variable value
 
 ***
@@ -34,7 +33,10 @@ A XML response with the following format:
 
 ```xml
 <response>
-	<command_received>system_get</command_received>
-	<system>C:\Users\verisurf\Documents\my mcam2017\</system>
+	<success>
+		<command_received>system_get</command_received>
+		<data>C:\Users\verisurf\Documents\my mcam2017\</data>
+		<request_id>1</request_id>
+	</success>
 </response>
 ```
