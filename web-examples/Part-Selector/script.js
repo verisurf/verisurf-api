@@ -13,7 +13,7 @@ $(function () {
     websocket.onmessage = function (event) {
         var domparser = new DOMParser();
         var xmlDoc = domparser.parseFromString(event.data, "text/xml");
-        var info = xmlDoc.getElementsByTagName("system");
+        var info = xmlDoc.getElementsByTagName("data");
         if (info.length > 0) {
             sharedDirectory = info[0].firstChild.nodeValue;
         }
