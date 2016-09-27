@@ -30,14 +30,15 @@ A XML response with the following format:
 ## Sample Response
 ```xml
 <response>
-	<command_received>command_list</command_received>
-	<commands>
-		<build />
-		<cadview_back />
-		<cadview_bottom />
-		...
-		<measure_sphere />
-		<measure_spline />
-	</commands>
+	<success>
+		<command_received>command_list</command_received>
+		<data>
+			<analyze />
+			<build />
+			...
+			<version />
+		</data>
+		<request_id>1</request_id>
+	</success>
 </response>
 ```
