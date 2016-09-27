@@ -25,7 +25,6 @@ Sets a value in the Verisurf settings file
 A XML response with the following format:
 
 - **response** — default wrapper for all API responses
-    - 'command_received' — echos command sent to API
 
 ***
 
@@ -40,4 +39,16 @@ A XML response with the following format:
 ## Sample Request
 ```xml
 <settings_set selector="VerisurfX7:TwoVScene:MeasureSettings_CommonDisplay:bRandomClr" value="1" />
+```
+ 
+***
+
+## Sample Response
+```xml
+<response>
+	<success>
+		<command_received>settings_set</command_received>
+		<request_id>1</request_id>
+	</success>
+</response>
 ```
