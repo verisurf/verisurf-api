@@ -4,6 +4,6 @@
   "main":    "main.js",
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "jquery": "^2.2.4"
+    "jquery": "^3.4.0"
   }
 }
