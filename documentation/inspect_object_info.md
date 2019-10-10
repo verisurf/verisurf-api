@@ -4,7 +4,7 @@
 
 ## Description
 
-Returns measurement information for object with specific id
+Returns current measurement information for object with specific id
 
 ***
 
