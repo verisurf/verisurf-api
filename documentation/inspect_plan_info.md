@@ -5,6 +5,9 @@
 ## Description
 
 Returns object information for plan with specific id
+plan id = index of Plan in Plan List.
+run_state = If the plan is currently running.
+measure_object_id = Current object in measurement. (only shown when run_state=1)
 
 ***
 
@@ -44,7 +47,7 @@ A XML response with the following format:
 		<command_received>inspect_plan_info</command_received>
 		<data>
 			<inspect_plan_info>
-				<plan id="0" run_state="1">Report1
+				<plan id="0" run_state="1" measure_object_id="0">Report1
 				<plan_object object_id="0">Point1</plan_object>
 				</plan>
 			</inspect_plan_info>
