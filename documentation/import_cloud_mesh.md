@@ -1,15 +1,27 @@
 # Command
 
-    <Import_Cloud_Mesh filename="" />
+    <Import_Cloud_Mesh filename="" filetype="" />
 
 ## Description
 
-Imports external Mesh or Cloud data into Verisurf.  Supports specific formats of the following filetypes: eASCII_CLOUD = 1, eSTL_CLOUD, eSTL_MESH, eASCII_POINTS, eASCII_XYZDATA, eASCII_XYZRGBDATA, eCollada_DAE, eWavefront_OBJ, eStanford_PLY, eRandomAssimpFile, Wavefront_OBJ
+Imports external Mesh or Cloud data into Verisurf.  Supports specific formats of the following filetypes: 
+
+- **ASCII_CLOUD** = 1
+- **STL_CLOUD** = 2
+- **STL_MESH** = 3
+- **ASCII_POINTS** = 4
+- **ASCII_XYZDATA** = 5
+- **ASCII_XYZRGBDAT** = 6
+- **Collada_DAE** = 7
+- **Wavefront_OBJ** = 8
+- **Stanford_PLY** = 9
+- **RandomAssimpFile** = 11
 
 ***
 
 ## Parameters
 - **filename** _(required)_ - filename to be loaded, requires full path
+- **filetype** _(required)_ - filetype of file to be loaded, int
 - **group** - group name to use for imported objects
 - **scale** - scale to use for imported measurements
 - **poly** - if present import will be done as poly
@@ -35,7 +47,7 @@ A XML response with the following format:
 ```xml
 <response>
 	<success>
-		<command_received>import_cloud_mesh</command_received>
+		<command_received>import_cloud_mesh filetype= "8" filename= "C:\users\github\meshes\mesh.obj"</command_received>
 		<request_id>1</request_id>
 	</success>
 </response>
