@@ -38,6 +38,7 @@ A XML response with the following format:
 		<data>
 			<device_info 
 			id="0" 
+			Alignment="Auto-Align1"
 			X="11.502328647260969" 
 			Y="0.00093040743343797395" 
 			Z="2.2474214800824512" 
