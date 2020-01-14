@@ -40,29 +40,22 @@ A XML response with the following format:
 </response>
 <!-- RESPONSE 2 -->
 <response>
-	<success>
-		<command_received>inspect_object_info</command_received>
-		<data>
-			<inspect_object_info>
-				<object id="0">Point1<property name="X" nominal="-6.502131725834623" tolmin="-0.01" tolmax="0.01" measured="-6.502131725834623" deviation="0"/>
-					<property name="Y" nominal="3.0448689183020363" tolmin="-0.01" tolmax="0.01" measured="3.0448689183020363" deviation="0"/>
-					<property name="Z" nominal="0.00071101086684584531" tolmin="-0.01" tolmax="0.01" measured="0.00071101086684584531" deviation="0"/>
-					<property name="I" nominal="0" tolmin="-0.01" tolmax="0.01" measured="0" deviation="0"/>
-					<property name="J" nominal="0" tolmin="-0.01" tolmax="0.01" measured="0" deviation="0"/>
-					<property name="K" nominal="1" tolmin="-0.01" tolmax="0.01" measured="1" deviation="0"/>
-					<property name="2D Radius" nominal="7.1797593072293822" tolmin="-0.01" tolmax="0.01" measured="7.1797593072293822" deviation="0"/>
-					<property name="2D Angle" nominal="154.90688079322467" tolmin="-0.10000000000000001" tolmax="0.10000000000000001" measured="154.90688079322467" deviation="0"/>
-					<property name="3D Radius" nominal="7.1797593424350508" tolmin="-0.01" tolmax="0.01" measured="7.1797593424350508" deviation="0"/>
-					<property name="3D Angle" nominal="0.0056739954616604497" tolmin="-0.10000000000000001" tolmax="0.10000000000000001" measured="0.0056739954616604497" deviation="0"/>
-					<property name="3D Position" nominal="0" tolmin="-0.01" tolmax="0.01" measured="0" deviation="0"/>
-					<property name="Position" nominal="0" tolmax="0.01" measured="0" deviation="0"/>
-					<property name="MMC" nominal="0" tolmax="0.01" measured="0" deviation="0"/>
-					<property name="LMC" nominal="0" tolmax="0.01" measured="0" deviation="0"/>
-				</object>
-			</inspect_object_info>
-		</data>
-		<completed />
-		<request_id>1</request_id>
-	</success>
+    <success>
+        <command_received>inspect_object_info</command_received>
+        <data>
+            <inspect_object_info>
+                <object id="0">Circle1
+			<property name="X" nominal="-0.65005677877700985" tolmin="-0.01" tolmax="0.01" measured="-0.65005677877700985" deviation="0" />
+			<property name="Y" nominal="-0.23476512888355075" tolmin="-0.01" tolmax="0.01" measured="-0.23476512888355075" deviation="0" />
+			<property name="Z" nominal="0" tolmin="-0.01" tolmax="0.01" measured="0" deviation="0" />
+			<property name="Diameter" nominal="1.8470422215408304" tolmin="-0.01" tolmax="0.01" measured="1.8470422215408304" deviation="0" />
+			<property name="Position" nominal="0" tolmax="0.01" measured="0" deviation="0" />
+			<property name="Alignments" value="Auto-Align1" />
+			<property name="Transformation" value="Translation: X:-0.1818 Y:0.0039 Z:0.0150 / Rotation: A:0.0000 B:-0.0000 C:0.8451" /></object>
+            </inspect_object_info>
+        </data>
+        <completed />
+        <request_id>2</request_id>
+    </success>
 </response>
 ```
