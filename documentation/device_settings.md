@@ -59,9 +59,7 @@ A XML response with the following format:
     <success>
         <command_received>device_settings</command_received>
         <data>
-            <settings scanner_line_frequency="0.5" 
-            point_to_point_distance=".02" 
-            scan_line_width="2" 
+            <settings scanner_line_frequency="0.5" point_to_point_distance=".02" scan_line_width="2" />
         </data>
         <completed />
         <request_id>0</request_id>
