@@ -21,6 +21,11 @@ A XML response with the following format:
 
 - **response** — default wrapper for all API responses
     - 'device_info' — contains attributes with measurement information
+    - 'device_status' - Returns the Device Status
+    	* '0' - Not Connected
+		* '1' - Connection Active (Laser Acquired)
+		* '2' - Busy
+		* '3' - Error
 
 ***
 
@@ -47,6 +52,7 @@ A XML response with the following format:
 			K="1" 
 			ProbeRadius="0.25">
 			Mouse
+			device_status="1" X
 			</device_info>
 		</data>
 		<request_id>1</request_id>
