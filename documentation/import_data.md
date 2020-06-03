@@ -13,7 +13,7 @@ Imports external measurement data into Verisurf.  Supports specific formats of t
 - **group** - group name to use for imported objects
 - **scale** - scale to use for imported measurements
 - **poly** - if present import will be done as poly
-- **type** - integer for import type, 1 (point), 2 (cad), 3 (cloud, default), 4 (target)
+- **type** - integer for import type, 1 (point(s)), 2 (Targets), 3 (Cloud (default)), 4 (CAD)
 - **skip** - integer for number of rows to skip on import
 - **useWCS** - use active WCS when importing data
 
