@@ -44,8 +44,7 @@ A XML response with the following format:
         <command_received>inspect_object_info</command_received>
         <data>
             <inspect_object_info>
-                <object id="0">Circle1 
-			type="Circle"
+                <object id="0">Circle1 type="Circle">
 			<property name="X" nominal="-0.65005677877700985" tolmin="-0.01" tolmax="0.01" measured="-0.65005677877700985" deviation="0" />
 			<property name="Y" nominal="-0.23476512888355075" tolmin="-0.01" tolmax="0.01" measured="-0.23476512888355075" deviation="0" />
 			<property name="Z" nominal="0" tolmin="-0.01" tolmax="0.01" measured="0" deviation="0" />
