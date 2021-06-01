@@ -33,9 +33,9 @@ A XML response with the following format:
 
  - Assigns Circle{4} to the first Auto-Alignment{7}. ID's are found from <Object_list />
  
- <object_set_alignment ids="4,5,6,7"  alignment_id="7" />
+<object_set_alignment ids="4,5,6"  alignment_id="7" />
 
- - Assigns a series of Features{4,5,6,7} to the first Auto-Alignment{7}. ID's are found from <Object_list />
+ - Assigns a series of Features{4,5,6} to the first Auto-Alignment{7}. ID's are found from <Object_list />
 ```
 
 ## Sample Response
