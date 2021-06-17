@@ -56,6 +56,8 @@ A XML response with the following format:
 			<property name="Y" nominal="-0.77498499447846503" tolmin="-0.01" tolmax="0.01" measured="-0.77498499447846503" deviation="0" />
 			<property name="Z" nominal="0" tolmin="-0.01" tolmax="0.01" measured="0" deviation="0" />
 			<property name="Diameter" nominal="1.0730330585783212" tolmin="-0.01" tolmax="0.01" measured="1.0730330585783212" deviation="0" />
+			<property name="Alignments" value="Auto-Align1" />
+			<property name="Transformation" value="Translation: X:-0.1818 Y:0.0039 Z:0.0150 / Rotation: A:0.0000 B:-0.0000 C:0.8451" /></object>
 			<property name="Position" nominal="0" tolmax="0.01" measured="0" deviation="0" /></object>
             </inspect_object_info>
         </data>
