@@ -18,6 +18,7 @@ Imports external measurement data into Verisurf.  Supports specific formats of t
 - **type** - integer for import type, 1 (point(s)), 2 (Targets), 3 (Cloud (default)), 4 (CAD)
 - **skip** - integer for number of rows to skip on import
 - **useWCS** - use active WCS when importing data
+- **data** - Send Base64 Encoded data. (A reference _filename_ still required as temporary placeholder for Verisurf. )
 
 ***
 
@@ -76,6 +77,14 @@ Source CSV:
 <!-- code -->
 ```xml
 <Import_Data type="4" skip="1" filename="E:\Verisurf\Dev\vs-data-file.csv" />
+```
+
+
+**Import Base64 encoded data**
+The following snippet will import the above example XYZ data.
+<!-- code -->
+```xml
+<Import_Data filename="testcloud" data="Ni4zOTMyNDYzCTEuMjQyOTYxODQJMS4yMzQKNi4wNDEyMDA4NwkwLjM5OTMwMzIyCTEuMjM0CjQuMjcxNzAzNDEJMC44OTIyOTMwNAkxLjIzNAozLjY3MDkzODEyCTIuNDY1OTU3OTIJMS4yMzQKNC4wNjg0Njg3MwkzLjUyNDU4NDQJMS4yMzQKNS4zMDQ0OTkxMQkzLjI4MzAyNjUyCTEuMjM0Ci0xLjExMjEyODE1CS0wLjIwODIzNzk5CTEuMjM0Ci0wLjk2MTA5ODQJMC42OTMzNjM4NAkxLjIzNAowLjg3NDE0MTg4CTAuNjE1NTYwNjQJMS4yMzQKMS42NzA0ODA1NQktMS45MDE2MDE4MwkxLjIzNAowLjQxMTg5OTMxCS0xLjk0NzM2ODQyCTEuMjM0" />"
 ```
 
 
